@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilizações gerais */
+img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+/* NAV */
+header {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+header p {
+    color: orange;
+}
+
+header div p {
+    cursor: pointer;
+    color: white;
+}
+
+header div p:hover {
+    color: orange;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Container geral */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* container Main */
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.containerGrid .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 150ms ease-in-out;
+}
+
+.containerGrid .card:hover {
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+.lateralGrid {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.lateralGrid .card:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.12);
+}
+
+.lateralGrid #categorias {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+#voltarTopo {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#voltarTopo:hover {
+    color: orange;
+}
