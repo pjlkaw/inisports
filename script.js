@@ -8,16 +8,19 @@ function botoesHeader() {
 }
 
 function voltarTopo() {
-    document.getElementById('voltarTopo').addEventListener('click', () => {
-        window.scroll({ top: 0, behavior: 'smooth' })
-    })
+    const voltarTopoBtn = document.getElementById('voltarTopo')
+    if (voltarTopoBtn) {
+        voltarTopoBtn.addEventListener('click', () => {
+            window.scroll({ top: 0, behavior: 'smooth' })
+        });
+    }
 }
 
 function clicarCard() {
-    const elementos = document.querySelectorAll('card')
-    elementos.forEach(
-        addEventListener('click', () => {
-            alert('Não temos itens nessa seção')
-        })
-    )
+    const elementos = document.querySelectorAll('.card'); 
+    elementos.forEach(elemento => {
+        elemento.addEventListener('click', () => { 
+            alert('Não temos itens nessa seção');
+        });
+    });
 }
